@@ -181,7 +181,9 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
-        if (arr.length >= 2){
+        if (arr.length == 2){
+            current_sum += arr[1];
+        }else if (arr.length > 2){
             for (int i = 1; i < arr.length - 2; i +=2){
                 current_sum += arr[i];
             }
